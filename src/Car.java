@@ -43,7 +43,7 @@ public final class Car {
     }
 
     public Engine getEngine() {
-        return new Engine(engine);
+        return engine.copy(engine);
     }
 
     @Override

@@ -21,6 +21,10 @@ public class Engine {
 
     public Engine(){}
 
+    public Engine copy(Engine engine){
+        return new Engine(engine.horsePower,engine.weight,engine.mileage);
+    }
+
     public int getHorsePower() {
         return horsePower;
     }
